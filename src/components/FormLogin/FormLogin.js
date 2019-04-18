@@ -1,8 +1,6 @@
 import React, { Component } from "react"
 import './FormLogin.css';
 
-
-
 class App extends Component {
   state = {
 
@@ -51,8 +49,7 @@ class App extends Component {
     return (
         <form className="login" onSubmit={(e)=>{this.onSubmit(e)}}>
             {this.renderForm()}
-            <input className="item" class="btn btn-outline-light" type="submit" value="Entrar" />
-            
+            <input className="item" class="btn btn-outline-light" type="submit" value="Entrar"/>
         </form>
     );
   }

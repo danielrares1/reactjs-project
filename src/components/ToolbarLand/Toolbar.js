@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarNav, NavItem } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import FormLogin from '../../components/FormLogin/FormLogin';
 
-class ToolbarLand extends React.Component {
+class ToolbarLand extends React.Component { 
             
     state = {
         data:[
@@ -27,15 +27,12 @@ class ToolbarLand extends React.Component {
                 this.setState({data: data})
                 return alert( JSON.stringify(data))
             })
-  
-        
    }
-
     render() {
 
         return (
             <Router>
-                <Navbar color="danger-color-dark" expand="md" scrolling fixed="top">
+                <Navbar color="danger-color-dark" expand="sm" scrolling fixed="top">
                     <NavbarBrand className="Logo">
                         <a href="/">Antena <i class="fas fa-broadcast-tower"></i> CPS</a>
                     </NavbarBrand>
@@ -45,9 +42,8 @@ class ToolbarLand extends React.Component {
                                 model = {[
                                     {key: "username", props:{placeholder:"Email"}},
                                     {key: "password", type:"password", props:{min:6, max:12, placeholder:"Senha"}}
-                                ]}        
+                                        ]}        
                                 onSubmit = {(model) => {this.onSubmit(model)}}/>
-                            
                           </NavItem>
                         </NavbarNav>
                 </Navbar>

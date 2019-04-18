@@ -25,9 +25,9 @@ class App extends Component {
           let key = m.key;
           let type = m.type || "text";
           let props = m.props || {};
-
+          
           return (
-              
+    
               <div key={key} className="form-group">
                   <label className="form-label" key={"l" + m.key} htmlFor={m.label}>{m.label}
                   </label>
